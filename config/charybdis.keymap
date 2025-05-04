@@ -172,7 +172,7 @@
         NAV {
             bindings = <
 &kp ESCAPE  &trans  &trans    &kp UP_ARROW  &trans     &kp CLCK    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &out OUT_TOG   &trans
-&mo 4       &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans      &kp GRAVE          &kp INS          &kp HOME              &kp PAGE_UP           &kp BACKSPACE  &trans
+&trans      &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans      &kp GRAVE          &kp INS          &kp HOME              &kp PAGE_UP           &kp BACKSPACE  &trans
 &trans      &trans  &trans    &trans        &trans     &trans      &kp BACKSLASH      &kp DELETE       &kp END               &kp PAGE_DOWN         &trans         &trans
                               &trans        &kp LCTRL  &trans      &kp RIGHT_GUI      &mo 3
             >;
@@ -181,7 +181,7 @@
         SYMNUM {
             bindings = <
 &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9     &kp N0     &kp DEL
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp MINUS  &kp EQUAL  &mo 4
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp MINUS  &kp EQUAL  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp DOT    &trans     &trans
                         &mo 3   &trans  &trans    &trans  &trans
             >;
@@ -196,13 +196,20 @@
             >;
         };
 
-        BL {
+        AUTO-MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &bootloader    &bootloader  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &sys_reset     &sys_reset   &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &trans       &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans         &trans       &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                        &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
             >;
         };
+
+        SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
     };
 };
