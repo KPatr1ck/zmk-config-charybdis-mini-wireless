@@ -98,14 +98,14 @@
             timeout-ms = <50>;
         };
 
-        Ctrl-A {
+        Ctrl_A {
             bindings = <&kp LC(A)>;
             key-positions = <27 13>;
             slow-release;
             timeout-ms = <50>;
         };
 
-        Ctrl-Z {
+        Ctrl_Z {
             bindings = <&kp LC(Z)>;
             key-positions = <27 25>;
             slow-release;
