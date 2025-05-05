@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define U_TAPPING_TERM 200
 
@@ -110,6 +111,13 @@
             key-positions = <27 25>;
             slow-release;
             timeout-ms = <50>;
+        };
+
+        Colon {
+            bindings = <&kp COLON>;
+            key-positions = <15 16>;
+            timeout-ms = <50>;
+            slow-release;
         };
     };
 
