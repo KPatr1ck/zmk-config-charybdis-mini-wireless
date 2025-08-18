@@ -172,9 +172,9 @@
 
         NAV {
             bindings = <
-&kp ESCAPE  &trans  &trans    &kp UP_ARROW  &trans     &kp CLCK    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &out OUT_TOG   &bt BT_NXT
-&trans      &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans      &kp GRAVE          &kp INS          &kp HOME              &kp PAGE_UP           &kp BACKSPACE  &trans
-&mo 6       &trans  &trans    &trans        &trans     &trans      &kp BACKSLASH      &kp DELETE       &kp END               &kp PAGE_DOWN         &trans         &trans
+&kp ESCAPE  &trans  &trans    &kp UP_ARROW  &trans     &kp CLCK    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &out OUT_TOG   &bt BT_SEL 0
+&trans      &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans      &kp GRAVE          &kp INS          &kp HOME              &kp PAGE_UP           &kp BACKSPACE  &bt BT_SEL 1
+&mo 6       &trans  &trans    &trans        &trans     &trans      &kp BACKSLASH      &kp DELETE       &kp END               &kp PAGE_DOWN         &trans         &bt BT_NXT
                               &trans        &kp LCTRL  &trans      &trans             &mo 3
             >;
         };
